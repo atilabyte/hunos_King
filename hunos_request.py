@@ -3,6 +3,8 @@ import requests
 import re
 
 
+
+
 from hunos_cve import CVE
 
 
@@ -49,17 +51,17 @@ def get_html(ip):
 
 
 
-
-ptr = open('ips', 'r') 
-
-
-ips = ptr.readlines()
+def teste():
 
 
 
+ ptr = open('ips', 'r') 
 
 
-for ip in ips:
+ ips = ptr.readlines()
+
+
+ for ip in ips:
 
 
 
