@@ -25,7 +25,7 @@ from  hunos_cve import  webmin_cve  #webmin using port 10000
 def get_html(ip):
 
 
-   # php_unit(ip)  #test all ips  cve in phpunit
+    php_unit(ip)  #test all ips  cve in phpunit
 
 
 
