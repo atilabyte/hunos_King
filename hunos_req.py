@@ -34,7 +34,7 @@ def get_html(ip):
 
 
       
-        resp  = requests.get( ip  , timeout=10 , verify=0)
+        resp  = requests.get( ip  , timeout=5 , verify=0)
        
       
        
@@ -117,6 +117,9 @@ def teste():
     
 
     t = threading.Thread(target=get_html  , args=(ip ,))
+
+
+   
 
 
     t.start()

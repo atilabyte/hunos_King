@@ -62,7 +62,7 @@ def think_cve( target )  :
    print(target)
  
 
-   re =    requests.get(target , verify=0 , timeout=10)
+   re =    requests.get(target , verify=0 , timeout=5)
     
 
    print(re.text)
@@ -96,7 +96,7 @@ def php_unit( target ) :
         
 
      
-    r = requests.post(target , data=payload , verify=0, timeout=15)
+    r = requests.post(target , data=payload , verify=0, timeout=5)
   
 
 
@@ -150,6 +150,6 @@ def webmin_cve (target):
 
 
 
- r = requests.post( target, headers=h  , data=data ,  verify=0 , timeout=10)
+ r = requests.post( target, headers=h  , data=data ,  verify=0 , timeout=5)
 
 
